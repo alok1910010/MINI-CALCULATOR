@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calc</title>
+    <style>
+         body{
+            background-color: rgb(9, 82, 146);
+        }
+       #g{
+        background-color: rgb(14, 148, 65);
+        height:200px;
+        width:30%;
+        margin-top: 12%;
+        margin-left: 32%;
+       
+        padding: 6%;
+       }
+       input{
+        height: 50px;
+        width: 210px;
+       }
+       button{
+        height: 50px;
+        width: 80px;
+        margin: 3%;
+       }
+       
+    </style>
+</head>
+
+<body>    
+    <div id="g">
+        <h1>Mini Calculator</h1>
+    <input type="text" placeholder="Enter 1st Number" id="a" value="">
+    <input type="text" placeholder="Enter 2nd Number"id="b" value="">
+    <br>
+    
+<button onclick="add()">Add</button>
+<button onclick="subtract()">Subtract</button>
+<button onclick="multiply()">Multiply</button>
+<button onclick="divide()">Divide</button>
+
+</div>
+
+</body>
+<script>
+    
+    
+    function add(){
+        var mX=document.querySelector("#a").value        
+        var tZ=document.querySelector("#b").value    
+        var k=parseFloat(mX) + parseFloat(tZ)
+        alert("Ans = "+k)
+    }
+    function subtract(){
+        var mX=document.querySelector("#a").value         
+        var tZ=document.querySelector("#b").value         
+        var k=parseFloat(mX) - parseFloat(tZ)   
+        alert("Ans = "+k)
+
+    }
+    function multiply(){
+        var mX=document.querySelector("#a").value 
+        var tZ=document.querySelector("#b").value         
+        var k=parseFloat(mX) * parseFloat(tZ)   
+        alert("Ans = "+k)
+
+    }
+    function divide(){
+        var mX=document.querySelector("#a").value
+        var tZ=document.querySelector("#b").value        
+        var k=parseFloat(mX) / parseFloat(tZ)   
+        alert("Ans = "+k)
+
+    }
+
+</script>
+</html>
